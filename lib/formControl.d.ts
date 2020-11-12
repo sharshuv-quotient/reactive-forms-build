@@ -4,6 +4,7 @@ import { AsyncValidator, AsyncValidatorFn, ControlEventOptions, ControlOptions, 
 export declare class FormControl<T = any, E extends object = any> extends NgFormControl {
     readonly value: T;
     readonly errors: E | null;
+    // @ts-ignore
     readonly asyncValidator: AsyncValidatorFn<T>;
     readonly valueChanges: Observable<T>;
     readonly status: ControlState;
